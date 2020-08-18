@@ -33,10 +33,10 @@ The steps involved are:
    can be divided into two teams: One will focus on the pending tasks and one will try to solve the bugs reported. The testing will be done throughout the
    process starting from the initial release till deployment and later on.
 
-**5. Deployement:**
+**5. Deployment:**
    
    After intense testing by the testing team from the local host, the release will be deployed to a domain based host. The testing will be carried out again
-   to ensure the proper fuctioning of the webpage.
+   to ensure the proper functioning of the webpage.
 
 **6. Review:**
    
