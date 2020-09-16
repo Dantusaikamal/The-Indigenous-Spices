@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=" http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <title>form validation</title>
+   
+</head>
+<body>
+   
+ <div class="container">  <!---we write our entire HTML code inside this CLASS,
+    which will be an parent element for all "DIV ATTRIBUTES" -->
+
+    <!---note: we have created ID's for assigning them to an element in the JS file 
+    to add some functionality, CLASSES to design them in CSS file  -->
+
+    <!--Inside a container,there is a class called header, for assigning a title-->
+        <div class="header">
+
+            <h2>The Indigenous Spices</h2>
+        </div>
+        <!--Inside a container, there is another class called button-box,
+        for creating a button box  -->
+        <div class="button-box">
+        <!---As 'btn' ID is written inside the 'button-box' class,
+            it is also an parent element to the ID 'btn'-->
+            <div id="btn"></div>
+
+        <!---As we require two buttons inside the button box, we will
+        have two buttons of TYPE:BUTTON, and also we create a CLASS:'toggle-btn'
+        inorder to toggle the button from signin to signup and viceversa-->
+        
+        <!---and also beside CLASS we had an attribute named 'ONCLICK'
+        which is assigned to signin() & signup() respectively.
+        , we write somecode in JS for its functionality-->
+          <button type="button" class="toggle-btn" onclick="signin()">signin</button>
+          <button type="button" class="toggle-btn" onclick="signup()">signup</button>
+        </div>
+
+        <!---now comes another CLASS inside a container named 'form'  -->
+        <form id="signupForm" class="form">
+            <div class="form-inputs"> <!---PARENT ELEMENT-->
+                <label>Username</label>
+                <input type="text" placeholder="username" id="signupUsername"autocomplete="off" />
+                <small>Error message</small>
+            </div>
+            <div class="form-inputs">
+                <label>Email</label>
+                <input type="email" placeholder="email" id="signupEmail" autocomplete="off" />
+                <small>Error message</small>
+            </div>
+            <div class="form-inputs">
+                <label>Password</label>
+                <input type="password" placeholder="password" id="signupPassword" autocomplete="off"/>
+                <span class="iconsPosition" onclick="signupTogglePassword()">
+                    <i id="lock" class="fa fa-lock"></i>
+                    <i id="unlock" class="fa fa-unlock"></i>
+                </span>
+                <small>Error message</small>
+            </div>
+            <div class="form-inputs">
+                <label>Re-enter password</label>
+                <input type="password" placeholder="re-enter password" id="signupPasswordCheck" autocomplete="off"/>
+                <span class="iconsPosition" onclick="signupTogglePasswordCheck()">
+                    <i id="locked" class="ion-locked"></i>
+                    <i id="unlocked" class="ion-unlocked"></i>
+                </span>
+                <small>Error message</small>
+            </div>
+            <button id="signupSub">Submit</button>
+        </form>
+
+            <form id="signinForm" class="form">
+                <div class="form-inputs">
+                    <label>Username</label>
+                    <input type="text" placeholder="username" id="signinUsername" autocomplete="off" />
+                    <small>Error message</small>
+                </div>
+             
+                <div class="form-inputs">
+                    <label>Password</label>
+                    <input type="password" placeholder="password" id="signinPassword" autocomplete="off"/>
+                    <span class="iconsPosition" onclick="signinTogglePassword()">
+                        <i id="eye" class="fa fa-eye"></i>
+                        <i id="eyeSlash"  class="fa fa-eye-slash"></i>
+                    </span>
+                    <small>Error message</small>
+                </div>
+                <button id="signinSub">Submit</button>
+            </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
