@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background:url(img.jpg);
+	background-position: center;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+	background-color: #fff;
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+
+.header {
+	border-bottom: 1px solid #d6c7c7;
+	background-color: #f7f7f7;
+	padding: 10px 20px;
+}
+
+.header h2 {
+	margin: 0;
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 50px 9px #3b0606;
+	border-radius: 30px; 
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(0, 212, 219),rgb(9, 128, 118));
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.form {
+	padding: 20px 30px;	
+}
+
+.form-inputs {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-inputs label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-inputs input {
+	border: 2px solid #9e8c8c;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-inputs input:focus {
+	outline: 0;
+	border-color: rgb(194, 186, 177);
+}
+
+.form-inputs.success input {
+	border-color: #2ecc71;
+}
+
+.form-inputs.error input {
+	border-color: #e74c3c;
+}
+
+
+.form-inputs small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-inputs.error small {
+	visibility: visible;
+}
+
+#signupSub,
+#signupSub:active {
+	background-color: #ff971f;
+	border: 2px solid #dd841f;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+} 
+
+#signupSub:active {
+	border: 2px solid #dd841f;
+}
+#signupSub:hover {
+	background-color:#fb8702 ;
+	transition: 0.5s;
+}
+
+
+#signinSub {
+	background-color: #ff971f;
+	border: 2px solid #dd841f;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#signinSub:active {
+	transform: scale(0.95);
+}
+
+#signinSub:hover {
+	background-color:#fb8702;
+	transition: 0.5s;
+}
+
+
+
+#signupForm {
+    display: none;
+}
+
+
+#signinCheckbox {
+  display: inherit;
+  position: relative;
+}
+
+.signin-Checkbox {
+	left:0;
+	margin:0;
+}
+
+.signin-checkbox label {
+	display: inline-block;
+	margin-bottom: 5px;
+
+}
+
+.signin-checkbox input {
+	display: visible;
+}
+
+
+
+.iconsPosition{
+	position: absolute;
+	left: 92%;
+	bottom: 30px;
+	
+}
+
+#eye {
+	display: none;
+}
+
+#unlock {
+	display: none;
+}
+
+#unlocked {
+	display: none;
+}
+
